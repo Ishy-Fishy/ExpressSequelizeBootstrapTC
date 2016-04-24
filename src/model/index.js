@@ -19,9 +19,9 @@ fs
     });
 
 
-sequelize.models.Organization.hasMany(sequelize.models.User);
+sequelize.models.Organization.hasMany(sequelize.models.User, { foreignKey: { name: 'organizationId', allowNull: false}});
 
-sequelize.models.Organization.hasMany(sequelize.models.User);
+// sequelize.models.Organization.hasMany(sequelize.models.User);
 
 
 db.sequelize = sequelize;

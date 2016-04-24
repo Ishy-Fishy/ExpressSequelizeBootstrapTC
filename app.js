@@ -36,7 +36,7 @@ app.use(function (req, res, next) {
 app.use('/', require('./src/routes/index'));
 
 // api
-app.use('/api/v1', require('./src/routes/api_v1'));
+app.use('/api/v1', require('./src/routes/api_v1_1'));
 
 //// catch 404 and forward to error handler
 //app.use(function (req, res, next) {

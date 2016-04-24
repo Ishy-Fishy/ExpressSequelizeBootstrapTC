@@ -24,11 +24,12 @@ router.post('/user',  userController.create);
 
 // 1. update user API
 
+router.put('/user', userController.update);
 // 2. delete user API
-
+router.delete('/user/:id', userController.delete);
 // 3. get all user by organization id
-
+router.get('/user/:id/org', userController.getUserOrgId);
 // 3a. get list of user by organization id and filter by title specified in query string
-
+router.get('/user/:id', userController.getUserOrgFilter);
 
 module.exports = router;
